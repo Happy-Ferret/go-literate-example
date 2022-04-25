@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>main.go</title>
+<meta charset="utf-8"/>
+<style type="text/css">body {
+    background: rgb(225, 225, 225);
+    margin: 0px;
+    padding: 0px;
+}
+
+#docgo p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+#docgo div {
+    display: inline;
+}
+
+#docgo #background {
+    position: fixed;
+    top: 0; left: 525px; right: 0; bottom: 0;
+    background: rgb(47, 47, 47);
+    border-left: 1px solid #e5e5ee;
+    z-index: -1;
+}
+
+#docgo .keyword {
+    color: rgb(250, 200, 100);
+}
+
+#docgo .literal {
+    color: rgb(140, 190, 100);
+}
+
+#docgo .ident {
+    color: white;
+}
+
+#docgo .operator {
+    color: white;
+}
+
+#docgo .comment {
+}
+
+#docgo h1, h2, h3, h4, h5 {
+    text-align: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+
+#docgo h1 {
+    margin-top: 40px;
+}
+
+#docgo .doc {
+    vertical-align: top;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+    min-width: 450px;
+    max-width: 450px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 1px;
+    padding-left: 50px;
+    overflow-x: hidden;
+}
+
+#docgo .code {
+    min-width: 650px;
+    max-width: 650px;
+    padding-left: 25px;
+    padding-right: 15px;
+    border-left: 1px;
+    overflow-x: hidden;
+    vertical-align: top;
+}
+
+#docgo .code pre code  {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+    color: rgb(120, 120, 120);
+}
+</style>
+</head>
+<body>
+<div id="docgo">
+  <div id="background"></div>
+  <table>
+    <thead><tr><th class="doc"><h1>main.go</h1></th><th class="code"></th></tr></thead>
+    <tbody>
+      
+      <tr class="section">
+	<td class="doc"><p><a href="https://golang.org">Go</a> is a modern programming language with a C-like syntax focused on concurrency, modularity and ease-of-use.</p>
+</td>
+	<td class="code"><pre><code></code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p><a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program#Go">Hello World</a> is a basic programming exercise done to showcase a programming language's syntax.</p>
+</td>
+	<td class="code"><pre><code>
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><h2>Package definition</h2>
+
+<p>Every executable uses the package name <strong><code>main</code></strong> as an entry point.</p>
+</td>
+	<td class="code"><pre><code><div class="keyword">package</div> <div class="ident">main</div><div class="operator"></div>
+
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><h2>Imports</h2>
+
+<p>Here we import the <strong><code>fmt</code></strong> (short for &quot;format&quot;) module. <br/>
+<strong><code>fmt</code></strong> contains simple routines to format and output text.</p>
+</td>
+	<td class="code"><pre><code><div class="keyword">import</div> <div class="literal">&#34;fmt&#34;</div><div class="operator"></div>
+
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p>The <strong><code>Hello</code></strong> struct is a slight complication over simply running <strong><code>fmt.Println(&quot;Hello World&quot;)</code></strong>. <br/>
+This is done to showcase structs. One of the defining features of the Go programming language.</p>
+</td>
+	<td class="code"><pre><code>
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p>While Go itself is not Object-Oriented, structs can act similar to classes by binding data and methods together.</p>
+</td>
+	<td class="code"><pre><code>
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p><strong><code>Text</code></strong> provides a simple string type.</p>
+</td>
+	<td class="code"><pre><code><div class="keyword">type</div> <div class="ident">Hello</div> <div class="keyword">struct</div> <div class="operator">{</div>
+	<div class="ident">Text</div> <div class="ident">string</div><div class="operator"></div>
+<div class="operator">}</div><div class="operator"></div>
+
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p><strong><code>hello()</code></strong> implements the <strong><code>Hello</code></strong> type struct. <br/>
+It returns <strong><code>Text</code></strong>.</p>
+</td>
+	<td class="code"><pre><code><div class="keyword">func</div> <div class="operator">(</div><div class="ident">a</div> <div class="ident">Hello</div><div class="operator">)</div> <div class="ident">hello</div><div class="operator">(</div><div class="operator">)</div> <div class="operator">{</div>
+	<div class="ident">fmt</div><div class="operator">.</div><div class="ident">Println</div><div class="operator">(</div><div class="ident">a</div><div class="operator">.</div><div class="ident">Text</div><div class="operator">)</div><div class="operator"></div>
+<div class="operator">}</div><div class="operator"></div>
+
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p>**<code>main()</code> is mandatory in every Go program. <br/>
+It's the function initially run on program startup.</p>
+</td>
+	<td class="code"><pre><code><div class="keyword">func</div> <div class="ident">main</div><div class="operator">(</div><div class="operator">)</div> <div class="operator">{</div>
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p><strong><code>a</code></strong> is a variable (pseudo-object) of type <strong><code>Hello</code></strong>. <br/>
+We initialize it by feeding the <strong><code>Text</code></strong> field.</p>
+</td>
+	<td class="code"><pre><code>	<div class="ident">a</div> <div class="operator">:=</div> <div class="ident">Hello</div> <div class="operator">{</div>
+		<div class="ident">Text</div><div class="operator">:</div> <div class="literal">&#34;Hello World&#34;</div><div class="operator">,</div>
+	<div class="operator">}</div><div class="operator"></div>
+</code></pre></td>
+      </tr>
+      
+      <tr class="section">
+	<td class="doc"><p>Finally, we call the struct's <strong><code>hello()</code></strong> method to display the text fed on struct/object initialization.</p>
+</td>
+	<td class="code"><pre><code>	<div class="ident">a</div><div class="operator">.</div><div class="ident">hello</div><div class="operator">(</div><div class="operator">)</div><div class="operator"></div>
+<div class="operator">}</div><div class="operator"></div>
+
+</code></pre></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
